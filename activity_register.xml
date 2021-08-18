@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".RegisterActivity">
+
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Email"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName" />
+
+    <TextView
+        android:id="@+id/txtVwBackPassword"
+        android:layout_width="255dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="67dp"
+        android:gravity="center"
+        android:text="Click here to return to the login page"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="29dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:shadowColor="@android:color/black"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textColorLink="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword2"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Retype password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:shadowColor="@android:color/black"
+        android:singleLine="false"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etAge"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Username"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:shadowColor="@android:color/background_dark"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/etUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="124dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FFCE14"
+        android:onClick="OnLogin"
+        android:text="Register"
+        android:textColorLink="#FFCE14"
+        app:layout_constraintBottom_toTopOf="@+id/txtVwBackPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAge" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="13dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:shadowColor="@android:color/black"
+        android:singleLine="false"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/background_dark"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+
+</android.support.constraint.ConstraintLayout>
